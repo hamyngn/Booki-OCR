@@ -3,17 +3,39 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
-        <link rel="stylesheet" href="../normalize.css" />
-        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <title>Booki</title>
     </head>
 
     <body>
-        <nav>
-            
+    <div class="flex-container">
+        <div class="flex-item-left">
+        <img src="./images/logo/Booki@3x.png" alt="Booki logo">
+        </div>
+        <nav class="flex-item-right">
+            <ul>
+                <li><a href="#">Hébergements</a></li>
+                <li><a href="#">Activités</a></li>
+            </ul>
         </nav>
-
+    </div>
+    <p>
+        <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+        <br>
+            En plein centre ville ou en pleine nature
+    </p>
+    <div class="flex-row">
+        <p id="rcorners1">?</p>
+        <form class="flex-row">
+            <input type="text" id="ville" name="ville" placeholder="Marseille, France" required><br>
+            <input id="rcorners2" type="submit" value="Rechercher">
+          </form>
+    </div>
+      
+    
         <footer>
 
         </footer>
