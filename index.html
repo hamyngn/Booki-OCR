@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/normalize.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <title>Booki</title>
@@ -15,7 +16,7 @@
         <div class="flex-item-left">
         <img src="./images/logo/Booki@3x.png" alt="Booki logo">
         </div>
-        <nav class="flex-item-right">
+        <nav class="flex-item-right" style="text-align: end;">
             <ul>
                 <li><a href="#">Hébergements</a></li>
                 <li><a href="#">Activités</a></li>
@@ -28,23 +29,65 @@
             En plein centre ville ou en pleine nature
     </p>
     <div class="flex-row">
-        <p id="rcorners1">?</p>
+        <i id="rcorners1" class="bi bi-geo-alt-fill"></i>
         <form class="flex-row">
             <input type="text" id="ville" name="ville" placeholder="Marseille, France" required><br>
             <input id="rcorners2" type="submit" value="Rechercher">
           </form>
     </div>
     <div class="flex-container">
-        <h3>Filtres</h3>
-        <div class="flex-row">
-        <p id="rcorners3">?</p>
-        <p id="rcorners4">Economique</p>
+        <h3 style="margin-right: 25px;">Filtres</h3>
+        <div class="flex-container">
+        <div class="rcorners3">Economique <i class="bi bi-cash-coin rcorners4"></i></div>
+        <div class="rcorners3">Familial <i class="bi bi-universal-access rcorners4"></i></div>
+        <div class="rcorners3">Romantique <i class="bi bi-suit-heart-fill rcorners4"></i></div>
+        <div class="rcorners3">Animaux autorisés <i class="bi bi-github rcorners4"></i></div>
+        </div>
     </div>
-    <div class="flex-row">
-        <p id="rcorners3">?</p>
-        <p id="rcorners4">Familial</p>
+    <p><i class="bi bi-info-circle" style="margin-right: 10px;"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+    <div class="flex-container">
+        <div class="gallery flex-item-left">
+        <h3>Hébergements à Marseille</h3>
+        <div class="flex-container">
+        <div class="img-box">
+        <a target="_blank" href="#">
+            <img src="./images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
+          </a>
+          <div class="desc"><h5>Auberge La Cannebière</h5>
+            <p> Nuit à partir de 25&euro;</p>
+          </div>
+        </div>
+        <div class="img-box">
+            <a target="_blank" href="#">
+                <img src="./images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+              </a>
+              <div class="desc"><h5>Hôtel du port</h5>
+                <p>Nuit à partir de 52&euro;</p>
+              </div>
+        </div>
+        <div class="img-box">
+            <a target="_blank" href="#">
+                <img src="./images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
+              </a>
+              <div class="desc"><h5>Hôtel les mouettes</h5>
+                <p>Nuit à partir de 76&euro;</p>
+              </div>
+        </div>
+        </div>
+        </div>
+        <div class="gallery flex-item-right">
+            <h3>Les plus populaires</h3>
+            <div class="img-box flex-row">
+                <a target="_blank" href="#">
+                    <img src="./images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
+                  </a>
+                  <div class="desc"><h5>Hôtel les mouettes</h5>
+                    <p>Nuit à partir de 76&euro;</p>
+                  </div>
+            </div>
+        </div>
     </div>
-    </div>
+    
         <footer>
 
         </footer>
