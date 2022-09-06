@@ -4,22 +4,44 @@
 
   body {
     font-family: 'Raleway', sans-serif;
+    font-size: 13px;
     padding: 15px;
+  }
+
+  header {
+    padding-top: 12px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li a {
+    text-decoration: none;
+    color: black;
+    margin: 0px 10px 0px 10px;
+    padding: 40px 20px 0px 20px;
+    font-size: 14px;
+  }
+
+  li a:hover{
+    color: #0065FC;
   }
 
   .flex-container {
     display: flex;
     flex-wrap: wrap;
-    font-size: 20px;
     align-items: center;
   }
 
   .flex-item-left {
-    flex: 1;
+    flex: 1 1 auto;
   }
   
   .flex-item-right {
-    flex: 1;
+    flex: 1 1 auto;
+    text-align: end;
   }
 
   @media (max-width: 768px) {
@@ -27,12 +49,37 @@
       flex: 100%;
       text-align: center;
     }
+    body {
+      font-size: 15px;
+    }
+    li a {
+      font-size: 16px;
+      padding: 8px;
+      margin: 30px 0px 30px 0px;
+      border-bottom: 2px solid #F2F2F2;
+    }
+    li a:hover{
+      border-bottom: 2px solid #0065FC;
+    }
     img {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-  }  
+    form button.rcorners2{
+      display: none;
+    }
+    form button.rcorner-square {display:inline-block}
+    
+  }
+  
+  @media (min-width: 768px) {
+    li a:hover{
+      border-top: 2px solid #0065FC;
+    }
+    form button.rcorner-square {display:none}
+    form button.rcorners2 {display:inline-block}
+}
 
   nav ul {
     list-style-type: none;
@@ -49,16 +96,21 @@
   .flex-row {
     display: flex;
     flex-wrap: nowrap;
-    font-size: 20px;
+    font-size: 16px;
     align-items: center;
   }
 
-  #rcorners1 {
-    border-radius: 20px 0px 0px 20px;
+  h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .rcorners1 {
+    border-radius: 15px 0px 0px 15px;
     background: #F2F2F2;
     padding: 18px; 
-    width: 55px;
-    height: 55px; 
+    width: 50px;
+    height: 50px; 
   }
 
   input {
@@ -66,16 +118,32 @@
     margin-top: 20px;
     margin-bottom: 20px;
     border: none;
-    border-top: 2px solid #F2F2F2;
-    border-bottom: 2px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+  }
+  input::placeholder {
+    font-weight: bold;
+    color: black;
+  }
+  button {
+    border: none;
   }
 
-  #rcorners2 {
-    border-radius: 0px 20px 20px 0px;
+  .rcorners2 {
+    border-radius: 0px 15px 15px 0px;
     background: #0065FC;
     color: ghostwhite;
     padding: 14px;
-    height: 58px; 
+    height: 50px; 
+  }
+
+  .rcorner-square {
+    border-radius: 15px 15px 15px 15px;
+    background: #0065FC;
+    color: ghostwhite;
+    padding: 14px;
+    width: 50px;
+    height: 50px; 
   }
 
   .rcorners3 {
@@ -138,6 +206,10 @@
   .img-box p {
     margin: 2px 0px 0px 8px;
     font-size: 14px;
+  }
+
+  .gallery .flex-item-right {
+    flex: 30;
   }
  
   .flex-item-right .img-box img{

@@ -12,27 +12,30 @@
     </head>
 
     <body>
-    <div class="flex-container">
+    <header class="flex-container">
         <div class="flex-item-left">
         <img src="./images/logo/Booki@3x.png" alt="Booki logo">
         </div>
-        <nav class="flex-item-right" style="text-align: end;">
+        <nav class="flex-item-right">
             <ul>
-                <li><a href="#">Hébergements</a></li>
+                <li><a href="#hebergement">Hébergements</a></li>
                 <li><a href="#">Activités</a></li>
             </ul>
         </nav>
-    </div>
+    </header>
+    <main>
+    <section>
     <p>
-        <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <br>
             En plein centre ville ou en pleine nature
     </p>
     <div class="flex-row">
-        <i id="rcorners1" class="bi bi-geo-alt-fill"></i>
+        <i class="bi bi-geo-alt-fill rcorners1"></i>
         <form class="flex-row">
             <input type="text" id="ville" name="ville" placeholder="Marseille, France" required><br>
-            <input id="rcorners2" type="submit" value="Rechercher">
+            <button class="rcorners2" type="submit">Rechercher</button>
+            <button class="rcorner-square" type="submit"><i class="bi bi-search"></i></button>
           </form>
     </div>
     <div class="flex-container">
@@ -45,8 +48,9 @@
         </div>
     </div>
     <p><i class="bi bi-info-circle" style="margin-right: 10px;"></i>Plus de 500 logements sont disponibles dans cette ville</p>
-    <div class="flex-container">
-        <div class="gallery flex-item-left">
+    </section>
+    <article class="flex-container">
+        <section id="hebergement" class="gallery flex-item-left">
         <h3>Hébergements à Marseille</h3>
         <div class="flex-container">
         <div class="img-box">
@@ -73,21 +77,20 @@
                 <p>Nuit à partir de 76&euro;</p>
               </div>
         </div>
-        </div>
-        </div>
-        <div class="gallery flex-item-right">
+        </section>
+        <aside class="gallery flex-item-right">
             <h3>Les plus populaires</h3>
             <div class="img-box flex-row">
                 <a target="_blank" href="#">
-                    <img src="./images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
+                    <img src="./images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                   </a>
-                  <div class="desc"><h5>Hôtel les mouettes</h5>
-                    <p>Nuit à partir de 76&euro;</p>
+                  <div class="desc"><h5>Hôtel Le soleil du matin</h5>
+                    <p>Nuit à partir de 128&euro;</p>
                   </div>
             </div>
-        </div>
-    </div>
-    
+        </aside>
+    </article>
+    </main>
         <footer>
 
         </footer>
