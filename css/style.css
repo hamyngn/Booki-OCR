@@ -8,6 +8,10 @@
     padding: 30px 40px 0px 40px;
   }
 
+  header img {
+    width: 100px;
+  }
+
   ul {
     margin: 0;
     padding: 0;
@@ -28,6 +32,7 @@
   .flex-container {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     align-items: center;
   }
 
@@ -45,22 +50,31 @@
       flex: 100%;
       text-align: center;
     }
+
     body {
       font-size: 16px;
       padding: 30px 0px 0px 0px;
     }
+
     section {
       padding: 0px 20px;
     }
+
+    section h3 {
+      width: 100%;
+    }
+
     ul {
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-between;
       margin: 30px 0px;
     }
+
     li {
       flex: 1 1 auto;
     }
+
     li a {
       font-size: 16px;
       padding: 8px 0px;
@@ -68,17 +82,15 @@
       border-bottom: 2px solid #F2F2F2;
       display:block;
     }
+
     li a:hover{
       border-bottom: 2px solid #0065FC;
     }
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
     form button.rcorners2{
       display: none;
     }
+
     form button.rcorner-square {
       display:inline-block;
       position: absolute;
@@ -90,8 +102,14 @@
     li a:hover{
       border-top: 2px solid #0065FC;
     }
-    form button.rcorner-square {display:none}
-    form button.rcorners2 {display:inline-block}
+
+    form button.rcorner-square {
+      display:none
+    }
+
+    form button.rcorners2 {
+      display:inline-block
+    }
   }
 
   nav ul {
@@ -100,10 +118,6 @@
 
   nav li{
     display:inline-block;
-  }
-
-  img {
-    width: 100px;    
   }
 
   .flex-row {
@@ -171,24 +185,17 @@
   }
 
   .rcorners3 {
-    position: relative;
     border: 2px solid #F2F2F2;
     border-radius: 50px 50px 50px 50px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-right: 50px;
-    padding-left: 55px;
+    padding: 10px 10px 10px 0px;
+    margin-right: 20px;
     width: fit-content;
     height: 50px; 
   }
 
   .rcorners4 {
-    position: absolute;
-    left: -1px;
-    bottom:-1px;
-    height: 50px; 
-    width: 50px;
-    padding: 15px;
+    margin: -1px 5px -1px -1px;
+    padding: 16px;
     border-radius: 50%;
     color: ghostwhite;
     background: #DEEBFF;
@@ -196,6 +203,10 @@
 
   .rcorners3 i {
     color: #0065FC;
+  }
+
+  article .flex-item-left {
+    flex: 70;
   }
 
   .gallery {
@@ -209,48 +220,44 @@
     padding: 2px;
   }
 
-  .gallery img {
+  section.gallery img {
     border-radius: 20px 20px 0px 0px;
     padding: 2px;
-    width: 250px;
-    height: 120px;
+    width: 100%;
   }
 
   .img-box {
     border-radius: 20px 20px 20px 20px;
     background-color: white;
-    margin: 20x;
+    margin: 20px;
+  }
+
+  .img-box p {
+    margin: 2px 0px 0px 8px;
+    font-size: 12px;
+  }
+
+  .flex-column {
+    flex: 1 1 0%;
   }
 
   h5 {
     margin: 0px 0px 0px 8px;
     padding: none;
-  }
-
-  .img-box p {
-    margin: 2px 0px 0px 8px;
     font-size: 14px;
   }
 
-  .gallery .flex-item-right {
-    flex: 30;
+  .checked {
+    color:#0065FC;
   }
- 
-  .flex-item-right .img-box img{
+
+  article section i {
+    font-size: 11px;
+  }
+
+  aside img {
     border-radius: 20px 0px 0px 20px;
     width: 100px;
     height: 100px;
   }
-
-  .flex-column {
-    display: flex;
-    flex-direction: column;
-  }
   
-  section .flex-item-left {
-    flex: 2 1 auto;
-  }
-
-  section.flex-item-right {
-    flex: 1 1 auto;
-  }

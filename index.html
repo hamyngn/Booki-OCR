@@ -40,12 +40,10 @@
     </div>
     <div class="flex-container">
         <h3 style="margin-right: 25px;">Filtres</h3>
-        <div class="flex-container">
-        <div class="rcorners3">Economique <i class="bi bi-cash-coin rcorners4"></i></div>
-        <div class="rcorners3">Familial <i class="bi bi-universal-access rcorners4"></i></div>
-        <div class="rcorners3">Romantique <i class="bi bi-suit-heart-fill rcorners4"></i></div>
-        <div class="rcorners3">Animaux autorisés <i class="bi bi-github rcorners4"></i></div>
-        </div>
+        <div class="flex-row rcorners3"><i class="bi bi-cash-coin rcorners4"></i>Economique</div>
+        <div class="flex-row rcorners3"><i class="bi bi-universal-access rcorners4"></i>Familial</div>
+        <div class="flex-row rcorners3"><i class="bi bi-suit-heart-fill rcorners4"></i>Romantique</div>
+        <div class="flex-row rcorners3"><i class="bi bi-github rcorners4"></i>Animaux autorisés</div>
     </div>
     <p><i class="bi bi-info-circle" style="margin-right: 10px;"></i>Plus de 500 logements sont disponibles dans cette ville</p>
     </section>
@@ -53,15 +51,20 @@
         <section id="hebergement" class="gallery flex-item-left">
         <h2>Hébergements à Marseille</h2>
         <div class="flex-container">
-        <figure class="img-box">
+        <figure class="img-box flex-column">
         <a target="_blank" href="#">
             <img src="./images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
           </a>
           <figcaption class="desc"><h5>Auberge La Cannebière</h5>
             <p> Nuit à partir de 25&euro;</p>
+            <i class="bi bi-star-fill checked"></i>
+            <i class="bi bi-star-fill checked"></i>
+            <i class="bi bi-star-fill checked"></i>
+            <i class="bi bi-star-fill checked"></i>
+            <i class="bi bi-star-fill"></i>
           </figcaption>
         </figure>
-        <figure class="img-box">
+        <figure class="img-box flex-column">
             <a target="_blank" href="#">
                 <img src="./images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
               </a>
@@ -69,7 +72,7 @@
                 <p>Nuit à partir de 52&euro;</p>
               </figcaption>
         </figure>
-        <figure class="img-box">
+        <figure class="img-box flex-column">
             <a target="_blank" href="#">
                 <img src="./images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
               </a>
@@ -77,10 +80,11 @@
                 <p>Nuit à partir de 76&euro;</p>
               </figcaption>
         </figure>
+        </div>
         </section>
         <aside class="gallery flex-item-right">
             <h3>Les plus populaires</h3>
-            <div class="flex-column">
+            <div class="flex-container">
             <figure class="img-box flex-row">
                 <a target="_blank" href="#">
                     <img src="./images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
@@ -89,7 +93,7 @@
                     <p>Nuit à partir de 128&euro;</p>
                   </figcaption>
             </figure>
-        </div>
+            </div>
         </aside>
     </article>
     </main>
