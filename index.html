@@ -33,7 +33,7 @@
     <div class="flex-row">
         <i class="bi bi-geo-alt-fill rcorners1"></i>
         <form class="flex-row">
-            <input type="text" id="ville" name="ville" placeholder="Marseille, France" required><br>
+            <input type="search" id="ville" name="ville" placeholder="Marseille, France"><br>
             <button class="rcorners2" type="submit">Rechercher</button>
             <button class="rcorner-square" type="submit"><i class="bi bi-search"></i></button>
           </form>
@@ -51,43 +51,45 @@
     </section>
     <article class="flex-container">
         <section id="hebergement" class="gallery flex-item-left">
-        <h3>Hébergements à Marseille</h3>
+        <h2>Hébergements à Marseille</h2>
         <div class="flex-container">
-        <div class="img-box">
+        <figure class="img-box">
         <a target="_blank" href="#">
             <img src="./images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
           </a>
-          <div class="desc"><h5>Auberge La Cannebière</h5>
+          <figcaption class="desc"><h5>Auberge La Cannebière</h5>
             <p> Nuit à partir de 25&euro;</p>
-          </div>
-        </div>
-        <div class="img-box">
+          </figcaption>
+        </figure>
+        <figure class="img-box">
             <a target="_blank" href="#">
                 <img src="./images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
               </a>
-              <div class="desc"><h5>Hôtel du port</h5>
+              <figcaption class="desc"><h5>Hôtel du port</h5>
                 <p>Nuit à partir de 52&euro;</p>
-              </div>
-        </div>
-        <div class="img-box">
+              </figcaption>
+        </figure>
+        <figure class="img-box">
             <a target="_blank" href="#">
                 <img src="./images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
               </a>
-              <div class="desc"><h5>Hôtel les mouettes</h5>
+              <figcaption class="desc"><h5>Hôtel les mouettes</h5>
                 <p>Nuit à partir de 76&euro;</p>
-              </div>
-        </div>
+              </figcaption>
+        </figure>
         </section>
         <aside class="gallery flex-item-right">
             <h3>Les plus populaires</h3>
-            <div class="img-box flex-row">
+            <div class="flex-column">
+            <figure class="img-box flex-row">
                 <a target="_blank" href="#">
                     <img src="./images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                   </a>
-                  <div class="desc"><h5>Hôtel Le soleil du matin</h5>
+                  <figcaption class="desc"><h5>Hôtel Le soleil du matin</h5>
                     <p>Nuit à partir de 128&euro;</p>
-                  </div>
-            </div>
+                  </figcaption>
+            </figure>
+        </div>
         </aside>
     </article>
     </main>

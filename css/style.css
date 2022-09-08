@@ -4,12 +4,8 @@
 
   body {
     font-family: 'Raleway', sans-serif;
-    font-size: 13px;
-    padding: 15px;
-  }
-
-  header {
-    padding-top: 12px;
+    font-size: 14px;
+    padding: 30px 40px 0px 40px;
   }
 
   ul {
@@ -44,19 +40,33 @@
     text-align: end;
   }
 
-  @media (max-width: 768px) {
+  @media (max-device-width: 768px) {
     .flex-item-right, .flex-item-left {
       flex: 100%;
       text-align: center;
     }
     body {
-      font-size: 15px;
+      font-size: 16px;
+      padding: 30px 0px 0px 0px;
+    }
+    section {
+      padding: 0px 20px;
+    }
+    ul {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin: 30px 0px;
+    }
+    li {
+      flex: 1 1 auto;
     }
     li a {
       font-size: 16px;
-      padding: 8px;
-      margin: 30px 0px 30px 0px;
+      padding: 8px 0px;
+      margin: 0;
       border-bottom: 2px solid #F2F2F2;
+      display:block;
     }
     li a:hover{
       border-bottom: 2px solid #0065FC;
@@ -69,8 +79,11 @@
     form button.rcorners2{
       display: none;
     }
-    form button.rcorner-square {display:inline-block}
-    
+    form button.rcorner-square {
+      display:inline-block;
+      position: absolute;
+      left: 250px;
+    } 
   }
   
   @media (min-width: 768px) {
@@ -79,7 +92,7 @@
     }
     form button.rcorner-square {display:none}
     form button.rcorners2 {display:inline-block}
-}
+  }
 
   nav ul {
     list-style-type: none;
@@ -100,9 +113,13 @@
     align-items: center;
   }
 
-  h1 {
+  h1, h2{
     font-size: 18px;
     margin: 0;
+    font-weight: bolder;
+  }
+  h2 {
+    padding: 30px 0px 15px 25px;
   }
 
   .rcorners1 {
@@ -121,10 +138,17 @@
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
   }
+
   input::placeholder {
     font-weight: bold;
     color: black;
   }
+
+  input:focus {
+    outline: none;
+    font-weight: bold;
+  }
+
   button {
     border: none;
   }
@@ -218,4 +242,15 @@
     height: 100px;
   }
 
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  section .flex-item-left {
+    flex: 2 1 auto;
+  }
 
+  section.flex-item-right {
+    flex: 1 1 auto;
+  }
