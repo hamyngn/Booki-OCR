@@ -77,6 +77,10 @@
     padding: 2%;
   }
 
+  .bi-star-fill {
+    color:#dcd9d9;
+  }
+
   .rcorners1 {
     border-radius: 15px 0px 0px 15px;
     background: #F2F2F2;
@@ -169,7 +173,7 @@
   .img-box {
     border-radius: 20px 20px 20px 20px;
     background-color: white;
-    margin: 1.5%;
+    margin: 2%;
     box-shadow: 0 4px 8px 0 rgba(112, 110, 110, 0.2);
   }
 
@@ -199,7 +203,7 @@
 
   h5 {
     margin: 0px 0px 0px 8px;
-    padding: none;
+    padding: 0;
     font-size: 14px;
   }
 
@@ -211,11 +215,17 @@
     font-size: 11px;
   }
 
+  aside .img-box {
+    margin-bottom: 7%;
+  }
+  aside .img-box:last-child {
+    margin-bottom: 0;
+  }
   article aside img {
     border-radius: 20px 0px 0px 20px;
-    padding: 4%;
+    padding: 4% 4% 2% 4%;
     height: 120px;
-    width: 115px;
+    width: 120px;
     object-fit: cover;
   }
 
@@ -225,14 +235,34 @@
     margin: 2%;
   }
 
-  aside h3 .flex-column-9 {
-    flex: 90;
-  }
-  aside figcaption {
-    display: block;
-    flex-direction: column;
+  aside figcaption .flex-row {
+    padding-top: 25%;
+    padding-bottom: 0;
+    font-size: 12px;
   }
 
+  .img-activities {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  article:last-child .flex-column {
+    margin: 0 3% 0 0;
+  }
+
+  article:last-child .flex-column:last-child {
+    margin: 0;
+  }
+
+  article:last-child h5{
+    padding: 5% 5% 35px 5%;
+  }
+
+  .image-long {
+    height: 350px;
+  }
+  
   @media (max-device-width: 768px) {
     .flex-item-right, .flex-item-left {
       flex: 100%;
@@ -276,6 +306,16 @@
       border-bottom: 2px solid #0065FC;
     }
 
+    h5 {
+      font-size: 16px;
+      margin-bottom: 2%;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 2%;
+    }
+
     form button.rcorners2{
       display: none;
     }
@@ -314,6 +354,14 @@
     aside .flex-row {
       flex : 100%;
     }
+
+    aside figcaption .flex-row {
+      padding-top: 30%;
+    }
+
+    article section .img-box img {
+      height: 130px;
+    }
   }
   
   @media (min-device-width: 768px) {
@@ -329,3 +377,19 @@
       display:inline-block
     }
   }
+
+  @media (max-device-width: 992px) {
+    article .flex-item-left {
+      flex: 65;
+    }
+    article .flex-item-right {
+      flex: 35;
+    }
+    h5 {
+    width: 90%;
+    height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+  }
+
