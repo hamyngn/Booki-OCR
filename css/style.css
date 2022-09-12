@@ -218,9 +218,11 @@
   aside .img-box {
     margin-bottom: 7%;
   }
+
   aside .img-box:last-child {
     margin-bottom: 0;
   }
+
   article aside img {
     border-radius: 20px 0px 0px 20px;
     padding: 4% 4% 2% 4%;
@@ -235,9 +237,14 @@
     margin: 2%;
   }
 
+  aside figcaption {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+  }
+
   aside figcaption .flex-row {
-    padding-top: 25%;
-    padding-bottom: 0;
     font-size: 12px;
   }
 
@@ -353,10 +360,6 @@
 
     aside .flex-row {
       flex : 100%;
-    }
-
-    aside figcaption .flex-row {
-      padding-top: 30%;
     }
 
     article section .img-box img {
