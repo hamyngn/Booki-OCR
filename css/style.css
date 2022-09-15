@@ -327,7 +327,7 @@
     margin: 45px 0 55px 45px;
   }
 
-  @media (min-device-width: 768px) {
+  @media only screen and (min-device-width: 768px) {
     li a:hover{
       border-top: 2px solid #0065FC;
     }
@@ -341,7 +341,7 @@
     }
   }
 
-  @media (max-device-width: 1055px) {
+  @media only screen and (max-device-width: 1055px) {
     h5 {
       width: 90%;
       height: 18px;
@@ -349,7 +349,7 @@
       text-overflow: ellipsis;
     }
   }
-  @media (min-device-width: 768px) and (max-device-width: 992px) {
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
     article .flex-item-left {
       flex: 65;
     }
@@ -368,7 +368,7 @@
 
   }
   
-  @media (max-device-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .flex-item-right, .flex-item-left {
       flex: 100%;
       text-align: center;
