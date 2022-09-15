@@ -5,6 +5,10 @@
   body {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
+    max-width: 1500px;
+  }
+
+  body header, main {
     padding: 30px 40px 0px 40px;
   }
 
@@ -17,9 +21,12 @@
     padding: 0;
   }
 
-  li a {
+  a{
     text-decoration: none;
     color: black;
+  }
+
+  li a {
     margin: 0px 10px 0px 10px;
     padding: 40px 20px 0px 20px;
     font-size: 14px;
@@ -68,9 +75,16 @@
   }
 
   h1, h2, h3{
-    font-size: 18px;
     margin: 0;
     font-weight: bolder;
+  }
+
+  h1, h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
   }
 
   h2 {
@@ -150,6 +164,10 @@
     color: #0065FC;
   }
 
+  article.flex-container{
+    align-items: flex-start;
+  }
+
   article .flex-item-left {
     flex: 70;
     margin-right: 3%;
@@ -220,12 +238,10 @@
   }
 
   aside .flex-row {
-    margin: 10% 4% 0 4%;
+    margin: 9% 4% 0 4%;
   }
 
-  aside .img-box {
-    margin-bottom: 7%;
-  }
+
 
   aside .img-box:last-child {
     margin-bottom: 0;
@@ -275,7 +291,7 @@
   }
 
   article:last-child h5{
-    padding: 5% 5% 20px 5%;
+    padding: 5%;
   }
 
   .image-long {
@@ -298,6 +314,19 @@
     margin-bottom: 15%;
   }
 
+  footer {
+    background-color:#F2F2F2;
+    margin-top: 50px;
+  }
+
+  footer.flex-container {
+    align-items: flex-start;
+  }
+
+  footer .flex-column {
+    margin: 45px 0 55px 45px;
+  }
+
   @media (min-device-width: 768px) {
     li a:hover{
       border-top: 2px solid #0065FC;
@@ -312,6 +341,14 @@
     }
   }
 
+  @media (max-device-width: 1055px) {
+    h5 {
+      width: 90%;
+      height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
   @media (min-device-width: 768px) and (max-device-width: 992px) {
     article .flex-item-left {
       flex: 65;
@@ -321,19 +358,12 @@
       flex: 35;
     }
 
-    h5 {
-      width: 90%;
-      height: 16px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      }
-
     aside .flex-row {
       margin: 8% 4% 0 4%;
     }
 
     article:last-child h5 {
-      padding: 5% 5% 35px 5%;
+      padding: 5% 5% 25% 5%;
     }
 
   }
@@ -345,7 +375,10 @@
     }
 
     body {
-      font-size: 16px;
+      font-size: 16px;     
+    }
+
+    body header, main {
       padding: 30px 0px 0px 0px;
     }
 
@@ -383,7 +416,7 @@
 
     h5 {
       font-size: 16px;
-      margin-bottom: 2%;
+      margin: 0 0 2% 2%;
     }
 
     p {
@@ -422,6 +455,19 @@
       padding: 5% 3% 5% 3%;
     }
 
+    section.gallery img {
+      padding: 2% 2% 0 2%;
+    }
+
+    .img-box p {
+      margin: 0px 0px 1% 2%;
+      font-size: 14px;
+    }
+
+    .desc div {
+      margin-left: 2%;
+  }
+
     .flex-column{
       flex : 100%;
     }
@@ -443,7 +489,7 @@
     }
 
     article:last-child h5 {
-      padding: 2% 0 20px 2%;
+      padding: 0 0 7% 2%;
     }
 
     article:last-child h2 {
@@ -464,6 +510,18 @@
 
     article:last-child .flex-column:last-child {
       margin: 0 3%;
+    }
+
+    footer .flex-column {
+      margin: 45px 0 0 45px;
+    }
+
+    footer .flex-column:last-child {
+      margin-bottom: 50px;
+    }
+
+    footer {
+      margin-top: 30px;
     }
   }
 
