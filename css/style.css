@@ -70,7 +70,7 @@
     align-items: center;
   }
 
-  section .flex-container .flex-row {
+  #filter .flex-row {
     margin: 5px 10px 5px 0;
   }
 
@@ -199,19 +199,16 @@
     box-shadow: 0 4px 8px 0 rgba(112, 110, 110, 0.2);
   }
 
-  article section .img-box img{
+  #hebergement img{
     height: 110px;
-  }
-
-  article img:hover {
-    opacity: 0.3;
-  }
-
-  section.gallery img {
     border-radius: 20px 20px 0px 0px;
     padding: 2%;
     width: 100%;
     object-fit: cover;
+  }
+
+  article img:hover {
+    opacity: 0.3;
   }
 
   .img-box p {
@@ -229,11 +226,17 @@
     font-size: 14px;
   }
 
+  .hidden-overflow {
+    width: 90%;
+    height: 18px;
+    overflow: hidden;
+  }
+
   .checked {
     color:#0065FC;
   }
 
-  article section i {
+  #hebergement i {
     font-size: 11px;
   }
 
@@ -241,13 +244,11 @@
     margin: 9% 4% 0 4%;
   }
 
-
-
   aside .img-box:last-child {
     margin-bottom: 0;
   }
 
-  article aside img {
+  aside img {
     border-radius: 20px 0px 0px 20px;
     padding: 4% 4% 2% 4%;
     height: 120px;
@@ -278,19 +279,19 @@
     object-fit: cover;
   }
 
-  article:last-child h2 {
+  #activities h2 {
     padding-left: 1%;
   }
 
-  article:last-child .flex-column {
+  #activities .flex-column {
     margin: 0 3% 0 0;
   }
 
-  article:last-child .flex-column:last-child {
+  #activities .flex-column:last-child {
     margin: 0;
   }
 
-  article:last-child h5{
+  #activities h5{
     padding: 5%;
   }
 
@@ -341,14 +342,6 @@
     }
   }
 
-  @media only screen and (max-width: 1055px) {
-    h5 {
-      width: 90%;
-      height: 18px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-  }
   @media only screen and (min-width: 768px) and (max-width: 992px) {
     article .flex-item-left {
       flex: 65;
@@ -361,11 +354,6 @@
     aside .flex-row {
       margin: 8% 4% 0 4%;
     }
-
-    article:last-child h5 {
-      padding: 5% 5% 25% 5%;
-    }
-
   }
   
   @media only screen and (max-width: 768px) {
@@ -480,23 +468,23 @@
       margin: 5% 2% 0 2%;
     }
 
-    article section .img-box img {
+    #hebergement .img-box img {
       height: 130px;
     }
 
-    article:last-child img {
+    #activities img {
       height: 150px;
     }
 
-    article:last-child h5 {
-      padding: 0 0 7% 2%;
+    #activities h5 {
+      padding: 2% 0 5% 2%;
     }
 
-    article:last-child h2 {
+    #activities h2 {
       padding-left: 5%;
     }
 
-    article:last-child figure {
+    #activities figure {
       margin-bottom: 20px;
     }
 
@@ -504,11 +492,11 @@
       margin-bottom: 20px;
     }
 
-    article:last-child .flex-column {
+    #activities .flex-column {
       margin: 0 3%;
     }
 
-    article:last-child .flex-column:last-child {
+    #activities .flex-column:last-child {
       margin: 0 3%;
     }
 
