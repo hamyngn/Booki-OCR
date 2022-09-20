@@ -6,6 +6,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     max-width: 1500px;
+    margin: auto;
   }
 
   body header, main {
@@ -21,7 +22,7 @@
     padding: 0;
   }
 
-  a{
+  a {
     text-decoration: none;
     color: black;
   }
@@ -32,7 +33,7 @@
     font-size: 14px;
   }
 
-  li a:hover{
+  li a:hover {
     color: #0065FC;
   }
 
@@ -77,21 +78,20 @@
     margin: 5px 10px 5px 0;
   }
 
-  h1, h2, h3{
+  h1 {
     margin: 0;
-    font-weight: bolder;
+    font-size: 18px;
   }
 
-  h1, h2 {
+  h2 {
     font-size: 18px;
+    margin: 0;
+    padding: 2%;
   }
 
   h3 {
     font-size: 16px;
-  }
-
-  h2 {
-    padding: 2%;
+    margin: 0;
   }
 
   .bi-star-fill {
@@ -187,12 +187,8 @@
     margin: 2% 0;
   }
 
-  .desc {
-    margin: 2%;
-  }
-
-  .desc div {
-    margin-left: 7px;
+  .icon-line {
+    margin: 1% 0 2% 6%;
   }
 
   .img-box {
@@ -215,7 +211,7 @@
   }
 
   .img-box p {
-    margin: 2px 0px 0px 8px;
+    margin: 2% 0 0 6%;
     font-size: 12px;
   }
 
@@ -224,15 +220,9 @@
   }
 
   h5 {
-    margin: 0px 0px 0px 8px;
+    margin: 0 0 0 6%;
     padding: 0;
     font-size: 14px;
-  }
-
-  .hidden-overflow {
-    width: 90%;
-    height: 18px;
-    overflow: hidden;
   }
 
   .checked {
@@ -243,7 +233,7 @@
     font-size: 11px;
   }
 
-  aside .flex-row {
+  aside .img-box {
     margin: 9% 4% 0 4%;
   }
 
@@ -265,14 +255,16 @@
     margin: 2%;
   }
 
-  aside figcaption {
+  aside .desc {
     display: flex;
     flex-direction: column;
     height: 100px;
     justify-content: space-between;
+    flex: 1 1 0%;
+    margin-right: 10%;
   }
 
-  aside figcaption .flex-row {
+  aside .desc .flex-row {
     font-size: 12px;
   }
 
@@ -335,6 +327,11 @@
     #activities .flex-container {
       align-items: center;
     }
+    .hidden-overflow {
+      width: 90%;
+      height: 18px;
+      overflow: hidden;
+    }
   }
 
   @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -346,7 +343,7 @@
       flex: 35;
     }
 
-    aside .flex-row {
+    aside .img-box {
       margin: 8% 4% 0 4%;
     }
 
@@ -403,7 +400,7 @@
 
     h5 {
       font-size: 16px;
-      margin: 0 0 2% 2%;
+      margin: 2% 0 2% 6%;
     }
 
     p {
@@ -421,7 +418,7 @@
       left: 250px;
     } 
 
-    article {
+    #heberge-popular-container {
       flex-direction: column-reverse;
     }
 
@@ -442,33 +439,23 @@
       padding: 5% 3% 5% 3%;
     }
 
-    section.gallery img {
-      padding: 2% 2% 0 2%;
+    #hebergement img {
+      padding: 1% 1% 0 1%;
+      height: 130px;
     }
 
     .img-box p {
-      margin: 0px 0px 1% 2%;
+      margin: 0px 0px 1% 6%;
       font-size: 14px;
     }
-
-    .desc div {
-      margin-left: 2%;
-  }
 
     .flex-column{
       flex : 100%;
     }
 
-    aside .flex-row {
+    aside .img-box {
       flex : 100%;
-    }
-
-    aside .flex-row {
       margin: 5% 2% 0 2%;
-    }
-
-    #hebergement .img-box img {
-      height: 130px;
     }
 
     #activities img {
@@ -483,7 +470,7 @@
       padding-left: 5%;
     }
 
-    #activities figure {
+    #activities article {
       margin-bottom: 20px;
     }
 
@@ -499,16 +486,15 @@
       margin: 0 3%;
     }
 
+    footer {
+      margin-top: 30px;
+    }
     footer .flex-column {
-      margin: 45px 0 0 45px;
+      margin: 30px 0 0 30px;
     }
 
     footer .flex-column:last-child {
       margin-bottom: 50px;
-    }
-
-    footer {
-      margin-top: 30px;
     }
   }
 
