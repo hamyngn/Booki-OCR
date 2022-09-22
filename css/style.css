@@ -167,6 +167,10 @@
     color: #0065FC;
   }
 
+  #filter a:hover {
+    color: #0065FC;
+  }
+
   article.flex-container{
     align-items: flex-start;
   }
