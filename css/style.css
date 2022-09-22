@@ -47,12 +47,8 @@
     align-items: center;
   }
 
-  .flex-item-left {
-    flex: 1 1 auto;
-  }
-  
-  .flex-item-right {
-    flex: 1 1 auto;
+  .flex-item-left, .flex-item-right {
+    flex: auto;
   }
 
   nav {
@@ -264,7 +260,7 @@
     flex-direction: column;
     height: 100px;
     justify-content: space-between;
-    flex: 1 1 0%;
+    flex: auto;
     margin-right: 10%;
   }
 
